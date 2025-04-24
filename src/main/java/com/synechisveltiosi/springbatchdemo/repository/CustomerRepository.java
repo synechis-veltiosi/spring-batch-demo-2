@@ -1,4 +1,9 @@
 package com.synechisveltiosi.springbatchdemo.repository;
 
-public interface CustomerRepository extends org.springframework.data.jpa.repository.JpaRepository<com.synechisveltiosi.springbatchdemo.model.Customer, java.lang.Integer> {
-  }
+import com.synechisveltiosi.springbatchdemo.model.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CustomerRepository extends JpaRepository<Customer, Integer> {
+}
